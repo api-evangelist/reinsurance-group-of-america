@@ -1,0 +1,109 @@
+vocabulary:
+  name: Reinsurance Group of America Vocabulary
+  description: Terminology used in RGA's products, services, and the life and health reinsurance industry including underwriting, risk assessment, digital health data, and reinsurance financial solutions.
+  version: '1.0'
+  created: '2026-05-02'
+  modified: '2026-05-02'
+  tags:
+    - Financial Services
+    - Health Insurance
+    - Insurance Technology
+    - Life Insurance
+    - Reinsurance
+    - Underwriting
+
+  terms:
+
+    - term: Accelerated Underwriting
+      definition: A streamlined underwriting process that uses data and predictive analytics to make faster underwriting decisions, reducing or eliminating the need for traditional medical exams and tests for qualifying applicants.
+      tags:
+        - Insurance Technology
+        - Underwriting
+
+    - term: Automated Underwriting
+      definition: The use of software systems to make underwriting decisions based on predefined rules and algorithms without human intervention. RGA's AURA NEXT platform provides automated underwriting decision management as a SaaS API.
+      tags:
+        - Insurance Technology
+        - Underwriting
+
+    - term: AURA NEXT
+      definition: RGA's SaaS-based automated underwriting decision management platform that provides fast, flexible, and reliable automated underwriting decisions. Offered as an API-integrated service that enables point-of-sale decisions through e-applications, portals, and workflow solutions.
+      tags:
+        - RGA Products
+        - Underwriting Platform
+
+    - term: Cession
+      definition: The transfer of risk from a primary insurer (cedant) to a reinsurer. The portion of risk or premium transferred to the reinsurer. Cession rates and terms are defined in reinsurance treaties.
+      tags:
+        - Reinsurance
+
+    - term: Claims Management
+      definition: The process of evaluating, processing, and settling insurance claims. RGA provides claims management support to insurance carriers including technical expertise and assistance with complex claims.
+      tags:
+        - Claims
+        - Insurance Operations
+
+    - term: Digital Health Data (DHD)
+      definition: Structured electronic medical record (EMR) and medical claims data used for risk assessment in life insurance underwriting. RGA's DHD Risk Scoring service provides a real-time API to derive actionable underwriting risk scores from this data.
+      tags:
+        - Data Analytics
+        - Insurance Technology
+
+    - term: Electronic Health Records (EHR)
+      definition: Digital versions of patients' paper charts containing their medical history, diagnoses, medications, and treatment plans. EHR data is increasingly used in insurance underwriting to assess applicant health risk.
+      tags:
+        - Digital Health
+        - Healthcare Data
+
+    - term: Facultative Reinsurance
+      definition: A type of reinsurance where the reinsurer has the option to accept or reject each risk individually, as opposed to treaty reinsurance where all qualifying risks are automatically covered. RGA's FAC Exchange portal supports facultative reinsurance transactions.
+      tags:
+        - Reinsurance
+
+    - term: Financial Solutions
+      definition: Reinsurance-based structures used as financial risk and capital management tools, including portfolio optimization, reserve financing, and capital relief transactions. A key business segment for RGA.
+      tags:
+        - Financial Engineering
+        - Reinsurance
+
+    - term: Jumbo Limit
+      definition: The maximum amount of insurance coverage that can be issued on a single life under a reinsurance agreement without prior approval from the reinsurer.
+      tags:
+        - Risk Management
+        - Underwriting
+
+    - term: Life Reinsurance
+      definition: Reinsurance coverage for life insurance policies, where an insurance company cedes a portion of the mortality risk on individual life policies to a reinsurer like RGA to manage its own risk exposure.
+      tags:
+        - Life Insurance
+        - Reinsurance
+
+    - term: Mortality Risk
+      definition: The risk that a policyholder will die sooner than expected based on actuarial assumptions. Life reinsurance fundamentally involves the transfer of mortality risk from primary insurers to reinsurers.
+      tags:
+        - Actuarial
+        - Risk Management
+
+    - term: Reinsurance Treaty
+      definition: A contract between an insurance company and a reinsurer under which the reinsurer agrees to accept a defined portion of risk from all policies that fall within the treaty terms.
+      tags:
+        - Contracts
+        - Reinsurance
+
+    - term: Risk Score
+      definition: A numerical value assigned to an insurance applicant representing their relative risk of adverse outcomes (death, disability, disease). RGA's Digital Health Data API provides real-time risk scores derived from EHR and medical claims data.
+      tags:
+        - Data Analytics
+        - Underwriting
+
+    - term: SaaS Underwriting Platform
+      definition: Software as a Service delivery model for underwriting decision systems. RGA's AURA NEXT is delivered as a SaaS platform, ensuring clients always have access to the latest underwriting capabilities and rules.
+      tags:
+        - Insurance Technology
+        - SaaS
+
+    - term: Underwriting Rules Engine
+      definition: A system that encodes underwriting guidelines and decision logic to automatically evaluate insurance applications. AURA NEXT provides a rules engine where carriers can create, manage, and share rule sets for automated underwriting decisions.
+      tags:
+        - Insurance Technology
+        - Underwriting

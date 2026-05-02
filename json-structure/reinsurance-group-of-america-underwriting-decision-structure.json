@@ -1,0 +1,41 @@
+{
+  "name": "AURA NEXT Underwriting Decision",
+  "description": "Structure documentation for an automated underwriting decision from RGA's AURA NEXT platform.",
+  "fields": [
+    { "name": "applicationId", "type": "string", "required": true, "description": "Insurance application identifier." },
+    { "name": "decisionId", "type": "string", "required": false, "description": "Decision record identifier." },
+    { "name": "decisionDate", "type": "date-time", "required": true, "description": "Timestamp of the decision." },
+    { "name": "decision", "type": "string", "required": true, "description": "Decision outcome (Approved, Declined, Referred, etc.)." },
+    { "name": "riskClass", "type": "string", "required": false, "description": "Assigned risk classification." },
+    { "name": "tableRating", "type": "integer", "required": false, "description": "Table rating percentage above standard mortality." },
+    { "name": "flatExtra", "type": "number", "required": false, "description": "Flat extra premium per thousand." },
+    { "name": "exclusions", "type": "array[string]", "required": false, "description": "Policy exclusions applied." },
+    {
+      "name": "decisionReasons",
+      "type": "array[object]",
+      "required": false,
+      "description": "Reasons contributing to the decision.",
+      "fields": [
+        { "name": "reasonCode", "type": "string", "required": false, "description": "Coded decision factor." },
+        { "name": "reasonDescription", "type": "string", "required": false, "description": "Human-readable factor description." },
+        { "name": "weight", "type": "number", "required": false, "description": "Relative weight of this factor." }
+      ]
+    },
+    { "name": "automatedDecision", "type": "boolean", "required": false, "description": "Whether fully automated without human review." },
+    { "name": "referralQueue", "type": "string", "required": false, "description": "Referral queue if case was referred." },
+    {
+      "name": "policyDetails",
+      "type": "object",
+      "required": false,
+      "description": "Policy being underwritten.",
+      "fields": [
+        { "name": "productType", "type": "string", "required": false, "description": "Insurance product type." },
+        { "name": "faceAmount", "type": "number", "required": false, "description": "Coverage amount in dollars." },
+        { "name": "issueAge", "type": "integer", "required": false, "description": "Applicant age at issue." },
+        { "name": "gender", "type": "string", "required": false, "description": "Applicant gender." }
+      ]
+    },
+    { "name": "ruleSetVersion", "type": "string", "required": false, "description": "Version of underwriting rule set used." },
+    { "name": "processingTimeMs", "type": "integer", "required": false, "description": "Processing time in milliseconds." }
+  ]
+}

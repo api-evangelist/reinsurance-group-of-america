@@ -1,0 +1,37 @@
+{
+  "applicationId": "APP-2026-0042891",
+  "decisionId": "DEC-AURA-20260502-889234",
+  "decisionDate": "2026-05-02T14:23:11Z",
+  "decision": "Approved",
+  "riskClass": "Standard Plus",
+  "tableRating": null,
+  "flatExtra": null,
+  "exclusions": [],
+  "decisionReasons": [
+    {
+      "reasonCode": "HEALTH-OK",
+      "reasonDescription": "No significant adverse health conditions identified in application or digital health data.",
+      "weight": 0.45
+    },
+    {
+      "reasonCode": "LABS-NORMAL",
+      "reasonDescription": "Laboratory values within normal ranges for applicant's age and gender.",
+      "weight": 0.30
+    },
+    {
+      "reasonCode": "LIFESTYLE-LOW",
+      "reasonDescription": "No tobacco use. No high-risk avocations disclosed.",
+      "weight": 0.25
+    }
+  ],
+  "automatedDecision": true,
+  "referralQueue": null,
+  "policyDetails": {
+    "productType": "20-Year Term Life",
+    "faceAmount": 500000,
+    "issueAge": 38,
+    "gender": "Female"
+  },
+  "ruleSetVersion": "AURA-NEXT-v4.12.1",
+  "processingTimeMs": 847
+}

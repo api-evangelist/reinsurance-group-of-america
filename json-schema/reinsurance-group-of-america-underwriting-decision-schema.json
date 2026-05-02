@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/reinsurance-group-of-america/json-schema/reinsurance-group-of-america-underwriting-decision-schema.json",
+  "title": "AURA NEXT Underwriting Decision",
+  "description": "Schema for an automated underwriting decision returned by RGA's AURA NEXT platform API.",
+  "type": "object",
+  "required": ["applicationId", "decisionDate", "decision"],
+  "properties": {
+    "applicationId": {
+      "type": "string",
+      "description": "Unique identifier for the insurance application."
+    },
+    "decisionId": {
+      "type": "string",
+      "description": "Unique identifier for this underwriting decision."
+    },
+    "decisionDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the underwriting decision was made."
+    },
+    "decision": {
+      "type": "string",
+      "description": "The underwriting decision outcome.",
+      "enum": ["Approved", "Approved with Modifications", "Referred", "Declined", "Postponed", "Pending Information"]
+    },
+    "riskClass": {
+      "type": "string",
+      "description": "Assigned risk classification (e.g., 'Preferred Plus', 'Standard', 'Substandard')."
+    },
+    "tableRating": {
+      "type": "integer",
+      "description": "Table rating if applicable (percentage above standard mortality, in multiples of 25).",
+      "minimum": 0
+    },
+    "flatExtra": {
+      "type": "number",
+      "description": "Flat extra premium per thousand if applicable."
+    },
+    "exclusions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Any exclusions applied to the policy."
+    },
+    "decisionReasons": {
+      "type": "array",
+      "description": "Reasons contributing to the underwriting decision.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "reasonCode": {
+            "type": "string",
+            "description": "Coded reason for the decision factor."
+          },
+          "reasonDescription": {
+            "type": "string",
+            "description": "Human-readable description of this decision factor."
+          },
+          "weight": {
+            "type": "number",
+            "description": "Relative weight of this factor in the decision."
+          }
+        }
+      }
+    },
+    "automatedDecision": {
+      "type": "boolean",
+      "description": "Whether this decision was made fully automatically without human review."
+    },
+    "referralQueue": {
+      "type": "string",
+      "description": "If referred, the queue or team to which the case was referred."
+    },
+    "policyDetails": {
+      "type": "object",
+      "description": "Details about the policy being underwritten.",
+      "properties": {
+        "productType": {
+          "type": "string",
+          "description": "Type of insurance product (e.g., 'Term Life', 'Universal Life', 'Whole Life')."
+        },
+        "faceAmount": {
+          "type": "number",
+          "description": "Face amount of coverage requested in dollars."
+        },
+        "issueAge": {
+          "type": "integer",
+          "description": "Age of the applicant at policy issue."
+        },
+        "gender": {
+          "type": "string",
+          "enum": ["Male", "Female", "Non-Binary", "Unknown"]
+        }
+      }
+    },
+    "ruleSetVersion": {
+      "type": "string",
+      "description": "Version of the underwriting rule set used to make this decision."
+    },
+    "processingTimeMs": {
+      "type": "integer",
+      "description": "Time in milliseconds taken to produce the decision."
+    }
+  }
+}

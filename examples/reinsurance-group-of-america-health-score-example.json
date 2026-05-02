@@ -1,0 +1,30 @@
+{
+  "requestId": "DHD-REQ-2026-774512",
+  "applicationId": "APP-2026-0042891",
+  "scoreDate": "2026-05-02T14:23:08Z",
+  "riskScore": 142,
+  "riskCategory": "Low Risk",
+  "scoreConfidence": 0.91,
+  "dataAvailability": {
+    "ehrDataAvailable": true,
+    "claimsDataAvailable": true,
+    "rxDataAvailable": true,
+    "labDataAvailable": false
+  },
+  "healthSignals": [
+    {
+      "signalType": "Diagnosis",
+      "code": "Z87.891",
+      "description": "Personal history of nicotine dependence - last tobacco use 8 years ago, currently non-smoker.",
+      "riskContribution": 18
+    },
+    {
+      "signalType": "Medication",
+      "code": "NDC-00069-0245-66",
+      "description": "Statin medication for cholesterol management - well-controlled.",
+      "riskContribution": 12
+    }
+  ],
+  "recommendation": "Accelerated Underwriting",
+  "processingTimeMs": 312
+}

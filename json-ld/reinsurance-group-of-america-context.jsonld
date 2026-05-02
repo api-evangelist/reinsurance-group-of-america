@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "rga": "https://api-evangelist.github.io/reinsurance-group-of-america/vocab#",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "identifier": "schema:identifier",
+    "UnderwritingDecision": {
+      "@id": "rga:UnderwritingDecision",
+      "@type": "schema:Action",
+      "@context": {
+        "applicationId": "rga:applicationId",
+        "decisionDate": "schema:dateCreated",
+        "decision": "rga:decision",
+        "riskClass": "rga:riskClass",
+        "riskScore": "rga:riskScore",
+        "table": "rga:mortalityTable",
+        "automatedDecision": "rga:automatedDecision"
+      }
+    },
+    "InsuranceApplication": {
+      "@id": "rga:InsuranceApplication",
+      "@type": "schema:InsuranceProduct",
+      "@context": {
+        "applicantAge": "rga:applicantAge",
+        "applicantGender": "rga:applicantGender",
+        "faceAmount": "rga:faceAmount",
+        "productType": "rga:productType",
+        "carrier": "schema:provider",
+        "submissionDate": "schema:dateCreated"
+      }
+    },
+    "HealthDataScore": {
+      "@id": "rga:HealthDataScore",
+      "@type": "schema:MedicalEntity",
+      "@context": {
+        "applicationId": "rga:applicationId",
+        "scoreDate": "schema:dateCreated",
+        "riskScore": "rga:riskScore",
+        "scoreRange": "rga:scoreRange",
+        "dataSource": "rga:dataSource",
+        "diagnosisCodes": "rga:diagnosisCodes",
+        "claimsCodes": "rga:claimsCodes"
+      }
+    },
+    "ReinsuranceTreaty": {
+      "@id": "rga:ReinsuranceTreaty",
+      "@type": "schema:Contract",
+      "@context": {
+        "treatyNumber": "rga:treatyNumber",
+        "cedant": "schema:party",
+        "reinsurer": "schema:party",
+        "effectiveDate": "schema:startDate",
+        "terminationDate": "schema:endDate",
+        "quota": "rga:quotaShare",
+        "retention": "rga:retention",
+        "jumboLimit": "rga:jumboLimit"
+      }
+    },
+    "UnderwritingRule": {
+      "@id": "rga:UnderwritingRule",
+      "@type": "schema:Rule",
+      "@context": {
+        "ruleId": "rga:ruleId",
+        "ruleSet": "rga:ruleSet",
+        "condition": "rga:condition",
+        "action": "rga:underwritingAction",
+        "priority": "rga:rulePriority",
+        "effectiveDate": "schema:startDate"
+      }
+    },
+    "Claim": {
+      "@id": "rga:Claim",
+      "@type": "schema:ClaimReview",
+      "@context": {
+        "claimId": "rga:claimId",
+        "policyNumber": "rga:policyNumber",
+        "claimType": "rga:claimType",
+        "claimDate": "schema:dateCreated",
+        "benefit": "schema:amount",
+        "status": "rga:claimStatus"
+      }
+    }
+  }
+}

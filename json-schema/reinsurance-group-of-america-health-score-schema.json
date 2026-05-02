@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/reinsurance-group-of-america/json-schema/reinsurance-group-of-america-health-score-schema.json",
+  "title": "Digital Health Data Risk Score",
+  "description": "Schema for the risk score returned by RGA's Digital Health Data (DHD) scoring API based on structured electronic medical record and claims data.",
+  "type": "object",
+  "required": ["requestId", "applicationId", "scoreDate", "riskScore"],
+  "properties": {
+    "requestId": {
+      "type": "string",
+      "description": "Unique identifier for this scoring request."
+    },
+    "applicationId": {
+      "type": "string",
+      "description": "Identifier of the insurance application being scored."
+    },
+    "scoreDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the risk score was generated."
+    },
+    "riskScore": {
+      "type": "number",
+      "description": "Calculated risk score. Higher values indicate higher risk.",
+      "minimum": 0
+    },
+    "riskCategory": {
+      "type": "string",
+      "description": "Risk category derived from the score.",
+      "enum": ["Low Risk", "Moderate Risk", "High Risk", "Very High Risk", "Uninsurable"]
+    },
+    "scoreConfidence": {
+      "type": "number",
+      "description": "Confidence level of the score from 0.0 to 1.0.",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "dataAvailability": {
+      "type": "object",
+      "description": "Summary of data sources available for scoring.",
+      "properties": {
+        "ehrDataAvailable": {
+          "type": "boolean",
+          "description": "Whether electronic health record data was available."
+        },
+        "claimsDataAvailable": {
+          "type": "boolean",
+          "description": "Whether medical claims data was available."
+        },
+        "rxDataAvailable": {
+          "type": "boolean",
+          "description": "Whether prescription drug data was available."
+        },
+        "labDataAvailable": {
+          "type": "boolean",
+          "description": "Whether lab result data was available."
+        }
+      }
+    },
+    "healthSignals": {
+      "type": "array",
+      "description": "Key health signals that contributed to the risk score.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "signalType": {
+            "type": "string",
+            "description": "Type of health signal (e.g., 'Diagnosis', 'Medication', 'Lab Result')."
+          },
+          "code": {
+            "type": "string",
+            "description": "Medical code (ICD-10, NDC, LOINC, etc.)."
+          },
+          "description": {
+            "type": "string",
+            "description": "Human-readable description of the health signal."
+          },
+          "riskContribution": {
+            "type": "number",
+            "description": "Contribution of this signal to the overall risk score."
+          }
+        }
+      }
+    },
+    "recommendation": {
+      "type": "string",
+      "description": "Underwriting action recommendation based on the score.",
+      "enum": ["Straight Through Processing", "Accelerated Underwriting", "Refer for Review", "Order Additional Requirements", "Decline"]
+    },
+    "processingTimeMs": {
+      "type": "integer",
+      "description": "Time in milliseconds to process and return the score."
+    }
+  }
+}
