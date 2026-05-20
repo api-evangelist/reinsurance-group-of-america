@@ -48,6 +48,10 @@ apis:
       - type: Website
         url: https://investor.rgare.com/news-releases/news-release-details/rga-announces-industrys-first-digital-health-data-scoring
 common:
+  - type: GitHubOrganization
+    url: https://github.com/rgare
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/rga-reinsurance-group-of-america-incorporated
   - type: Website
     url: https://www.rgare.com/
     name: RGA Official Website
