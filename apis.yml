@@ -49,6 +49,8 @@ apis:
       - type: Website
         url: https://investor.rgare.com/news-releases/news-release-details/rga-announces-industrys-first-digital-health-data-scoring
 common:
+  - type: DomainSecurity
+    url: security/reinsurance-group-of-america-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/rgare
   - type: LinkedIn
