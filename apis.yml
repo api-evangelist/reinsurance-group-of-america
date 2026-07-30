@@ -1,4 +1,17 @@
 aid: reinsurance-group-of-america
+accessModel:
+  pricing: enterprise
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Enterprise
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reinsurance-group-of-america.png
 name: Reinsurance Group of America
 description: Reinsurance Group of America (RGA) is a leading global provider of life and health reinsurance and financial solutions, serving clients in more than 70 countries. RGA is the only global reinsurance company focused exclusively on life and health solutions. The company provides reinsurance, automated underwriting platforms, digital health data scoring, and financial risk management solutions to insurance carriers worldwide.
 type: Index
