@@ -21,6 +21,14 @@ description: Reinsurance Group of America (RGA) is a leading global provider of 
 type: Index
 url: https://raw.githubusercontent.com/api-evangelist/reinsurance-group-of-america/refs/heads/main/apis.yml
 tags:
+- Financial-Services
+- Health Insurance
+- Insurance Technology
+- Life Insurance
+- Reinsurance
+- Underwriting
+- Fortune 500
+tags_raw:
 - Financial Services
 - Health Insurance
 - Insurance Technology
@@ -42,6 +50,13 @@ apis:
   humanURL: https://www.rgare.com/solutions/underwriting/automated-underwriting
   baseURL: https://api.rgare.com/aura
   tags:
+  - Automated Underwriting
+  - Decision Management
+  - Insurance
+  - Life Insurance
+  - Software-as-a-Service
+  - Underwriting
+  tags_raw:
   - Automated Underwriting
   - Decision Management
   - Insurance
