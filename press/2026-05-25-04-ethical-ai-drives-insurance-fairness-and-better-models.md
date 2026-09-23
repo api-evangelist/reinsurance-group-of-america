@@ -1,7 +1,9 @@
 ---
 title: Ethical AI drives insurance fairness and better models
 url: https://www.ey.com/en_us/insights/consulting/ey-consulting-case-studies/ethical-ai-drives-insurance-fairness-and-better-models
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Reinsurance Group of America" press release artificial intelligence'
 position: 4
 source: serpapi-google
