@@ -66,82 +66,142 @@
 
 Reinsurance Group of America (RGA) is a leading global provider of life and health reinsurance and financial solutions, serving clients in more than 70 countries. RGA is the only global reinsurance company focused exclusively on life and health solutions. The company provides reinsurance, automated underwriting platforms, digital health data scoring, and financial risk management solutions to insurance carriers worldwide.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/reinsurance-group-of-america/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Health Insurance · Insurance Technology · Life Insurance · Reinsurance · Underwriting · Fortune 500
 
-## Scope
+## Reinsurance Group of America on APIs.io
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Reinsurance Group of America is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/reinsurance-group-of-america/](https://apis.io/providers/reinsurance-group-of-america/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (4)
 
-- Financial Services
-- Health Insurance
-- Insurance Technology
-- Life Insurance
-- Reinsurance
-- Underwriting
+- [AURA NEXT Automated Underwriting API](https://apis.io/apis/reinsurance-group-of-america/aura-next/) — AURA NEXT is RGA's SaaS-based automated underwriting decision management platform powered by 40+ years of underwriting expertise. The API enables insurance…
+- [Digital Health Data Risk Scoring API](https://apis.io/apis/reinsurance-group-of-america/digital-health-data/) — RGA's Digital Health Data (DHD) Risk Scoring service provides a real-time API for evaluating structured electronic medical record and medical claims data to…
+- [Digital Health Data Scoring API](https://apis.io/apis/reinsurance-group-of-america/digital-health-data-scoring/) — RGA's Digital Health Data (DHD) Risk Scoring service evaluates structured electronic medical record and medical claims data to derive actionable…
+- [RGA Central Portal API](https://apis.io/apis/reinsurance-group-of-america/rga-central-portal/) — RGA Central provides a single point of access to exclusive applications and insights for RGA clients. The portal supports client authentication and access…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-05-02
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### JSON Schema (2)
 
-| Name | Description |
-|------|-------------|
-| [AURA NEXT Automated Underwriting API](https://www.rgare.com/solutions/underwriting/automated-underwriting) | SaaS-based automated underwriting decision management platform powered by 40+ years of expertise |
-| [Digital Health Data Risk Scoring API](https://www.rgare.com/our-company/media/press-releases/press-releases-detail/2020/02/04/rga-announces-industry-s-first-digital-health-data-scoring-service) | Real-time API for scoring structured EHR and medical claims data for underwriting risk assessment |
+The data models the API reads and writes.
 
-## Resources
+- [Digital Health Data Risk Score](https://apis.io/schemas/reinsurance-group-of-america/reinsurance-group-of-america-health-score/)
+- [AURA NEXT Underwriting Decision](https://apis.io/schemas/reinsurance-group-of-america/reinsurance-group-of-america-underwriting-decision/)
 
-| Name | Type | URL |
-|------|------|-----|
-| RGA Official Website | Website | https://www.rgare.com/ |
-| RGAX - RGA Innovation Hub | Website | https://www.rgax.com/ |
-| RGA All Products and Services | Documentation | https://www.rgare.com/solutions/all-products-and-services |
-| RGA Investor Relations | Website | https://investor.rgare.com/ |
-| RGA Knowledge Center | Documentation | https://www.rgare.com/knowledge-center |
-| Reinsurance Group of America - Wikipedia | Website | https://en.wikipedia.org/wiki/Reinsurance_Group_of_America |
+#### JSON Structure (1)
 
-## Artifacts
+Data models expressed in JSON Structure.
 
-### JSON Schema
+- [Reinsurance Group Of America Underwriting Decision Structure](https://apis.io/json-structure/reinsurance-group-of-america/reinsurance-group-of-america-underwriting-decision-structure/)
 
-| File | Description |
-|------|-------------|
-| [reinsurance-group-of-america-underwriting-decision-schema.json](json-schema/reinsurance-group-of-america-underwriting-decision-schema.json) | Schema for AURA NEXT automated underwriting decisions |
-| [reinsurance-group-of-america-health-score-schema.json](json-schema/reinsurance-group-of-america-health-score-schema.json) | Schema for Digital Health Data risk scores |
+#### JSON-LD (1)
 
-### JSON Structure
+Linked-data contexts for the provider's vocabulary.
 
-| File | Description |
-|------|-------------|
-| [reinsurance-group-of-america-underwriting-decision-structure.json](json-structure/reinsurance-group-of-america-underwriting-decision-structure.json) | Field-level structure documentation for underwriting decisions |
+- [Reinsurance Group Of America Context](https://apis.io/jsonld/reinsurance-group-of-america/reinsurance-group-of-america-context/)
 
-### JSON-LD
+#### Vocabulary (1)
 
-| File | Description |
-|------|-------------|
-| [reinsurance-group-of-america-context.jsonld](json-ld/reinsurance-group-of-america-context.jsonld) | JSON-LD context for underwriting, health scoring, and reinsurance treaty concepts |
+The provider's domain terms, defined.
 
-### Examples
+- [Reinsurance Group of America Vocabulary](https://apis.io/vocabularies/reinsurance-group-of-america/reinsurance-group-of-america-vocabulary/)
 
-| File | Description |
-|------|-------------|
-| [reinsurance-group-of-america-underwriting-decision-example.json](examples/reinsurance-group-of-america-underwriting-decision-example.json) | Example AURA NEXT automated approval decision for a 20-year term life application |
-| [reinsurance-group-of-america-health-score-example.json](examples/reinsurance-group-of-america-health-score-example.json) | Example Digital Health Data risk score with health signals and recommendation |
+#### Examples (2)
 
-### Vocabulary
+Example requests and responses.
 
-| File | Description |
-|------|-------------|
-| [reinsurance-group-of-america-vocabulary.yml](vocabulary/reinsurance-group-of-america-vocabulary.yml) | Glossary of RGA-specific and life/health reinsurance industry terminology |
+- [Reinsurance Group Of America Health Score Example](https://apis.io/examples/reinsurance-group-of-america/reinsurance-group-of-america-health-score-example/)
+- [Reinsurance Group Of America Underwriting Decision Example](https://apis.io/examples/reinsurance-group-of-america/reinsurance-group-of-america-underwriting-decision-example/)
 
-## Maintainers
+#### Governance rules (1)
 
-**FN:** Kin Lane
+Spectral rulesets for the provider's contracts.
 
-**Email:** kin@apievangelist.com
+- [Reinsurance Group of America — jsonschema rules](https://apis.io/rules/reinsurance-group-of-america/reinsurance-group-of-america-jsonschema-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Reinsurance Group Of America Domain Security](https://apis.io/security/reinsurance-group-of-america/reinsurance-group-of-america-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Reinsurance Group Of America Plans Pricing](https://apis.io/plans/reinsurance-group-of-america/reinsurance-group-of-america-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Reinsurance Group Of America Rate Limits](https://apis.io/rate-limits/reinsurance-group-of-america/reinsurance-group-of-america-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Reinsurance Group Of America Finops](https://apis.io/finops/reinsurance-group-of-america/reinsurance-group-of-america-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.rgare.com/)
+- [Documentation](https://www.rgare.com/solutions/all-products-and-services)
+- [GitHub](https://github.com/rgare)
+
+## API Evangelist rating
+
+**Kin Score 15.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 13.2 |
+| Contract governance | 23.5 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 5.3 |
+
+**Agent readiness 1.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.6** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/reinsurance-group-of-america/](https://apis.io/providers/reinsurance-group-of-america/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Reinsurance Group of America: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/reinsurance-group-of-america/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
